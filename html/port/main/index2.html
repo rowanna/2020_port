@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style2.css">
+    
+    <!-- webfonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="scroll">0</div><!-- //scroll-->
+    
+    <section id="contents"
+        data-500 = "background-color: rgb(255,255,255)"
+        data-1500 = "background-color: rgb(235,227,207)"
+        >
+        <section id="section1">
+            <div class="sec1">
+                <h1>WONJI NA <strong>Portfolio</strong></h1>
+                <div class="imgbox1">
+                    <img src="img/intro01.jpg" alt="intro01">
+                </div>
+                <div class="imgbox2">
+                    <img src="img/intro02.jpg" alt="intro02">
+                </div>
+                <div class="imgbox3">
+                    <img src="img/intro03.jpg" alt="intro03">
+                </div>
+                <div class="circleWrap">
+                    <div class="circle1" aria-hidden="true"
+                        data-0 = "left: 13%; top: 25%; width: 100px; height: 100px;"
+                        data-1000 = "left: 33%; top: 105%; width: 500px; height: 500px;"
+                    ></div>
+                    <div class="circle2" aria-hidden="true"
+                        data-0 = "right: 15%; top: 65%; width: 200px; height: 200px"
+                        data-1000 = "right: 35%; top: 125%; width: 300px; height: 300px"
+                    ></div>
+                    <div class="circle3" aria-hidden="true"
+                        data-0 = "left: 25%; bottom: -10%; width: 150px; height: 150px"
+                        data-1000 = "left: 45%; bottom: -70%; width: 200px; height: 200px"
+                    ></div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="container">
+                <div class="sec2">
+                    <div class="left">
+                        <img src="img/about01.jpg" alt="about">
+                    </div>
+                    <div class="right">
+                        <h2>BELIEVE <br>IN COMFORTABLE <br>Public</h2>
+                        <p>새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한 부분과 유행하는 기술들을 공부 하여 자기개발에 힘쓰겠습니다. 
+                        또한, 최신기술과 크리에이티브한 아이디어로 끊임없이 소통하고 함께 합니다.</p>
+                        <a href="#" class="me">About me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
+        
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4">
+            <div class="container2">
+                <div class="sec4">
+                    <div class="script-wrap">
+                        <div class="script">
+                            <div class="left"></div>
+                            <div class="right">
+                                <div class="view">
+                                    <iframe src="http://richclub8.dothome.co.kr/effect/parallax01-jquery.html" frameborder="0"></iframe>
+                                </div>
+                                <h3>Javascript(01)</h3>
+                            </div>
+                        </div>
+
+                        <div class="script s2">
+                            <div class="left">
+                                <div class="view">
+                                    <iframe src="http://richclub8.dothome.co.kr/effect/mouseEffect01-jquery.html" frameborder="0"></iframe>
+                                </div>
+                                <h3>Javascript(02)</h3>
+                            </div>
+                            <div class="right">
+                                <div class="view">
+                                <iframe src="http://richclub8.dothome.co.kr/effect/mouseEffect01-javascript.html" frameborder="0"></iframe></div>
+                                <h3>Javascript(03)</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+    </section>
+    <!-- //contents -->
+    
+    <!-- script -->
+    <script src="../assets/js/jquery.min.1.12.4.js"></script>
+    <script src="../assets/js/skrollr.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        $(window).scroll(function(){
+            let scroll = $(window).scrollTop();
+            $(".scroll").text(scroll);
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- https://aainterior.com.ua/ -->

@@ -1,0 +1,155 @@
+<?php
+    include '../connect/connect.php';
+    include '../connect/session.php';
+?>
+
+
+
+<!--
+<?php
+
+    echo '<pre>';
+    var_dump($_SESSION);
+    echo '<pre>';
+//세션 여부 파악
+?>
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="wonjina">
+    <meta name="description" content="wonji's portfolio">
+    <meta name="keywords" content="나원지, 포트폴리오, portfolio, rowanna">
+    <meta name="generator" content="brackets">
+    <title>Porfolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style3.css">
+    <link rel="stylesheet" href="../assets/css/respon.css">
+
+
+    <!-- webfonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="scroll">0</div><!-- //scroll-->
+
+    <?php
+        include '../dom/header.php';
+    ?>
+    <!-- //header -->
+
+
+    <section id="section8">
+        <div class="sec8">
+            <h2>javascript <strong>javascript</strong> javascript</h2>
+            <span class="left-text">
+                <span>web standard</span>responsive site. mobile web site
+            </span>
+            <span class="right-text">html, css, javascript, jquery</span>
+            <div class="tit-bgcircle" aria-hidden="true"></div>
+        </div>
+    </section>
+    <!--//section8-->
+    <section id="section9">
+        <h3 class="sr-only">javascript contents</h3>
+        <div class="container">
+            <div class="sec9">
+                <div class="js-cont-box imgslide">
+                    <div class="left"></div>
+                    <div class="right">
+                        <div class="js-cont">
+                            <iframe src="../projects/imageSlide/imageSlideJS01.html" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                        <div class="js-desc">
+                            <div class="js-tit">
+                                <span>01</span>
+                                <h4>image slide</h4>
+                            </div>
+                            <a href="#">
+                                code view
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="js-cont-box parallax">
+                    <div class="left">
+                        <div class="js-cont">
+                            <iframe src="../projects/parallaxEffect/parallax01.html" frameborder="0"></iframe>
+                        </div>
+                        <div class="js-desc">
+                            <div class="js-tit">
+                                <span>02</span>
+                                <h4>parallax</h4>
+                            </div>
+                            <a href="#">
+                                code view
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right"></div>
+                </div>
+                <div class="js-cont-box mouse">
+                    <div class="left"></div>
+                    <div class="right">
+                        <div class="js-cont">
+                            <iframe src="../projects/mouseEffect/mouseeffect-ex.html" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                        <div class="js-desc">
+                            <div class="js-tit">
+                                <span>03</span>
+                                <h4>mouse effect</h4>
+                            </div>
+                            <a href="#">
+                                code view
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-cont-box chrome">
+                    <div class="left">
+                        <div class="js-cont"></div>
+                        <div class="js-desc">
+                            <div class="js-tit">
+                                <span>04</span>
+                                <h4>chrome app</h4>
+                            </div>
+                            <a href="#">
+                                code view
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right"></div>
+                </div>
+                <div class="js-cont-box paint">
+                    <div class="left"></div>
+                    <div class="right">
+                        <div class="js-cont"></div>
+                        <div class="js-desc">
+                            <div class="js-tit">
+                                <span>05</span>
+                                <h4>paint brush</h4>
+                            </div>
+                            <a href="#">
+                                code view
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//section9-->
+</body>
+
+</html>

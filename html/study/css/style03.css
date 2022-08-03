@@ -1,0 +1,112 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 레이아웃 */
+body {background: #030406;}
+#header {position: fixed; top: 0; left: 0; width: 100%; height: 80px; margin-bottom: 30px; border-bottom: #2E2E30 1px solid; background: #030406;}
+#intro {padding: 100px 0; width: 100%; height: 700px;}
+#login {padding: 200px 0;}
+#sign_up {padding: 250px 0;}
+#footer {position: fixed; bottom: 0; left: 0; width: 100%; height: 80px; border-top: #2E2E30 1px solid; background: #030406;}
+
+/* 컨테이너 */
+.container {width: 1200px; margin: 0 auto;}
+
+
+/* header */
+.header {position: relative;}
+.header_left {position: absolute; width: 10%; height: 80px; border-right: #2E2E30 1px solid;}
+.header_left .left_container {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.header_left .left_container .btnWrap {position: absolute; top: 30%; left: -130%;}
+.header_left .left_container .btnWrap .btn_line01 {width: 28px; height: 1px; background: #fff; margin-bottom: 5px;}
+.header_left .left_container .btnWrap .btn_line02 {width: 28px; height: 1px; background: #fff;}
+
+
+.header_center {text-align: center;}
+.header_center h1 {padding: 20px 0;}
+.header_center h1 a {font-size: 27px; font-family: "Saol Display Regular";}
+
+.header_right {position: absolute; right: 0; top: 0;}
+.header_right nav {padding: 32px;}
+
+.header_right nav ul li {display: inline-block; padding: 0 10px;}
+
+
+
+
+
+
+
+/* intro */
+.intro {}
+.intro div {font-size: 133px; font-family: "Saol Display Regular"; margin-bottom: -50px; text-transform: uppercase;}
+.intro div:nth-child(3) {padding-left: 220px;}
+.intro div:nth-child(4) {padding-left: 390px;}
+.intro div span {}
+.intro p {width: 35%; font-size: 18px; font-family: 'Chosunilbo_myungjo'; line-height: 1.4em; margin: 80px 0 0 800px;
+}
+
+
+/* login */
+.login {width: 30%; margin: 0 auto; font-size: 18px; font-family: 'Chosunilbo_myungjo'; text-align: center;}
+.login input, .login button {width: 100%; margin-bottom: 0.4em; font-size: 18px; font-family: 'Chosunilbo_myungjo';}
+.login h3 {font-size: 18px; width: 100%; margin-bottom: 30px; line-height: 1.5em;}
+.login form {}
+.login form input {background: none; box-sizing: border-box; border: 1px solid #fff; padding: 0.8em 0 0.8em 0.4em; }
+.login form button {text-align: center; background: #fff; color: #000; padding: 0.8em 0; border: none;}
+.login p {width: 100%;}
+.login p a {text-decoration: underline;}
+
+
+/* sign_up */
+.sign_up {width: 30%; margin: 0 auto; font-size: 18px; font-family: 'Chosunilbo_myungjo'; text-align: center;}
+.sign_up input, .sign_up button {width: 100%; margin-bottom: 0.4em; font-size: 18px; font-family: 'Chosunilbo_myungjo';}
+
+.sign_up h3 {font-size: 18px; width: 100%; margin-bottom: 30px; line-height: 1.5em;}
+.sign_up form {}
+.sign_up form input {background: none; box-sizing: border-box; border: 1px solid #fff;}
+.sign_up form > input {padding: 0.8em 0 0.8em 0.4em;}
+.sign_up form button {text-align: center; background: #fff; color: #000; padding: 0.8em 0; border: none;}
+.sign_up form .day_selectbox {width: 100%;}
+.sign_up form .day_selectbox .labelbox {width: 100%;}
+.sign_up form .day_selectbox .selecbox {width: 100%;}
+.sign_up form .day_selectbox label {width: 30.3333%; padding: 0.8em 0 0.8em 0.4em; text-align: center; display: inline-block;}
+.sign_up form .day_selectbox input {width: 32.3333%; box-sizing: border-box; text-align: center; padding: 0.8em 0;}
+.sign_up p {width: 100%;}
+.sign_up p a {text-decoration: underline;}
+
+
+
+
+
+
+
+/* footer */
+.footer {width: 100%; text-align: center;}
+.footer div {padding: 2.2em 0;}
+.footer strong {color: #787878; margin-right: 5px;}
+.footer span {font-weight: 100;}
+.footer .foot_left {float: left; width: 25%; height: 80px; border-right: #2E2E30 solid 1px; box-sizing: border-box;}
+.footer .foot_left strong {}
+.footer .foot_left span {}
+.footer .foot_center {float: left; width: 25%; height: 80px; border-right: #2E2E30 solid 1px; box-sizing: border-box;}
+.footer .foot_center strong {}
+.footer .foot_center span {}
+.footer .foot_right {float: left; width: 50%; height: 80px;}
+.footer .foot_right strong {color: #F0EEEB; width: 12.5%}
+.footer .foot_right ul {width: 87.5%; display: inline;}
+.footer .foot_right ul li {display: inline; width: 14.28%}
+.footer .foot_right ul li a {display: inline-block; padding: 0 0.6em; font-weight: 100;}
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slide - JavaScript</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+    <style>
+        /* reset */
+        *, *::before, *::after {
+            box-sizing: border-box; 
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            border-bottom: 1px dashed #fff;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+        ul {
+            padding: 10px 20px;
+        }
+        li {
+            list-style: none;
+        }
+        body {
+            background: #EBF4EA;
+            background-size: cover;
+            color: #fff;
+            height: 100vh;
+            transition: all 0.2s;
+            overflow: hidden;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: 'Spoqa Han Sans', 'Roboto', 'Sans-serif'; 
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: -1;
+        }
+
+        /* info */
+        .info {
+            position: absolute;
+            z-index: 1000;
+        }
+        .info h1 {
+            font-size: 20px;
+            border-bottom: 1px dashed #fff;
+            margin-bottom: 8px;
+        }
+
+        .info p, .info li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 3px;
+        }
+
+        .info li.active a:first-child {
+            background: #fff;
+            color: #000;
+        }
+
+        .info.left {
+            left: 20px;
+            top: 20px;
+        }
+
+        .info.right {
+            right: 10px;
+            top: 10px;
+        }
+
+        .info.right a {
+            display: inline-block;
+            margin-left: 5px;
+            width: 20px; height: 20px;
+            border: 1px dashed #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+
+        .info.right a:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .info.bottom {
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .info.view {
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .info.view a {
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            padding: 5px 30px;
+        }
+
+        @media (max-width: 800px){
+            .info.bottom {display: none;}
+            .info.right {display: none;}
+        }
+
+        /* slide */
+        .slider-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .slider-img {
+            position: relative;
+            width: 100%;
+            height: inherit;
+            overflow: hidden;
+/*            box-shadow: 1px 1px 13px rgba(0, 0, 0, .5);*/
+        }
+
+        .slider-img .slider {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 0.8s;
+        }
+        .slider-img .slider:nth-child(1) {z-index: 5;}
+        .slider-img .slider:nth-child(2) {z-index: 4;}
+        .slider-img .slider:nth-child(3) {z-index: 3;}
+        .slider-img .slider:nth-child(4) {z-index: 2;}
+        .slider-img .slider:nth-child(5) {z-index: 1;}
+
+        .slider-img .slider span {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- main -->
+    <main>
+        <div class="slider-wrap">
+            <div class="slider-img">
+                <div class="slider"><img src="../assets/img/slideimg01.jpg" alt="이미지1"><span>이미지1</span></div>
+                <div class="slider"><img src="../assets/img/slideimg02.jpg" alt="이미지2"><span>이미지2</span></div>
+                <div class="slider"><img src="../assets/img/slideimg03.jpg" alt="이미지3"><span>이미지3</span></div>
+                <div class="slider"><img src="../assets/img/slideimg04.jpg" alt="이미지4"><span>이미지4</span></div>
+                <div class="slider"><img src="../assets/img/slideimg05.jpg" alt="이미지5"><span>이미지5</span></div>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+    
+    <!-- info -->
+<!--
+    <div class="info left">
+        <h1><a href="#">JavaScript Image Slider</a></h1>
+        <p>이미지 슬라이드 효과</p>
+    </div>
+-->
+    <!-- //info -->
+
+    <script>
+        let sliderWrap = document.querySelector(".slider-wrap");
+        let sliderImg = document.querySelector(".slider-img");
+        let slider = document.querySelectorAll(".slider");
+
+        let currentIndex = 0; //첫번째(현재) 이미지
+        let sliderCount = slider.length;
+
+        setInterval(() => {
+            let nextIndex = (currentIndex + 1) % sliderCount;
+
+            slider[currentIndex].style.opacity = "0";
+            slider[nextIndex].style.opacity = "1";
+
+            currentIndex = nextIndex;
+
+
+        }, 3000);
+
+    </script>
+
+</body>
+</html>

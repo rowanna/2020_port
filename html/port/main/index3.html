@@ -1,0 +1,608 @@
+<?php
+    include '../connect/connect.php';
+    include '../connect/session.php';
+?>
+
+
+
+<!--
+<?php
+
+    echo '<pre>';
+    var_dump($_SESSION);
+    echo '<pre>';
+//세션 여부 파악
+?>
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="wonjina">
+    <meta name="description" content="wonji's portfolio">
+    <meta name="keywords" content="나원지, 포트폴리오, portfolio, rowanna">
+    <meta name="generator" content="brackets">
+    <title>Porfolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style3.css">
+    <link rel="stylesheet" href="../assets/css/respon.css">
+
+    <!-- webfonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="scroll">0</div><!-- //scroll-->
+
+    <?php
+        include '../dom/header.php';
+    ?>
+    <!-- //header -->
+
+    <section id="section1">
+        <div class="sec1">
+            <div class="title">
+                <h1>WONJI NA <strong>Portfolio</strong></h1>
+                <span>html, css, javascript<br>web publishing</span>
+            </div>
+            <div class="imgbox1">
+                <img src="../assets/img/intro01.jpg" alt="intro01">
+
+                <div class="circle1" aria-hidden="true">
+                    <div class="circle1img" aria-hidden="true"></div>
+                </div>
+            </div>
+            <div class="imgbox2">
+                <img src="../assets/img/intro02.jpg" alt="intro02">
+                <div class="circle2" aria-hidden="true">
+                    <div class="circle2img" aria-hidden="true"></div>
+                </div>
+            </div>
+            <div class="imgbox3">
+                <img src="../assets/img/intro03.jpg" alt="intro03">
+                <div class="circle3" aria-hidden="true">
+                    <div class="circle3img" aria-hidden="true"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section1 -->
+
+    <section id="section2">
+        <div class="row">
+            <div class="container2">
+                <div class="sec2">
+                    <div class="left">
+                        <img src="../assets/img/about01.jpg" alt="about">
+                    </div>
+                    <div class="right">
+                        <h2>BECOMING<br>WEB<br>PUBLISHER</h2>
+                        <div class="aboutSlideText">
+                            <p aria-hidden="true" data-0="margin-left: 50%;" data-600="margin-left: -10%;" data-3000="margin-left: -55%;"><span>introduce myself</span>and faithful
+                                <span>introduce myself</span>and faithful
+                                <span>introduce myself</span>and faithful
+                                <span>introduce myself</span>and faithful
+                                <span>introduce myself</span>and faithful
+                            </p>
+                        </div>
+                        <p>꾸준함과 견고함의 힘을 믿는, 퍼블리셔가 되고 싶은 나원지입니다. 튼튼한 벽돌로 빈틈없이 견고하게 지어진 집은 위기 상황이 와도 무너지지 않으며 굳건히 자신의 자리를 지킵니다. 저 또한 늘 그랬듯이 꾸준히 새로운 기술과 지식을 습득하고 견고하게 쌓아온 기본기를 활용하여 나날이 발전해가는 웹 분야에서 한 부분에 기여하고 싶습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section2 -->
+
+
+
+    <section id="section3">
+        <div class="sec3">
+            <h2>my works <strong>my works</strong> my works</h2>
+            <span class="left-text">
+                <span>web standard</span>responsive site. mobile web site
+            </span>
+            <span class="right-text">html, css, javascript, jquery</span>
+            <div class="tit-bgcircle" aria-hidden="true"></div>
+            <img aria-hidden="true" class="rightLeaf" src="https://d2kq0urxkarztv.cloudfront.net/59ee0858278cca00855b0b53/1800751/upload-320e5230-a5b8-4c8d-8119-5ff8180550ea.png?w=264&amp;e=webp" alt="rightLeaf">
+            <img aria-hidden="true" class="leftLeaf" src="https://d2kq0urxkarztv.cloudfront.net/59ee0858278cca00855b0b53/1800751/upload-3abe8da0-97db-4b57-a3f6-3ab0ccbda439.png?w=334&amp;e=webp" alt="leftLeaf">
+        </div>
+    </section>
+    <!-- //section3 -->
+
+
+    <section id="section4">
+        <section id="my01">
+            <div class="my">
+                <div class="works-desc-wrap">
+                    <div class="works-desc">
+                        <span>project 01</span>
+                        <h3>
+                            웹 표준 사이트
+                            <strong>Web Standard</strong>
+                        </h3>
+                        <p>웹 표준을 가장 준수하여 만든 사이트입니다. 웹 접근성을 위해 스킵메뉴작업, IR기법을 이용한 이미지 숨김처리, W3C 호환성 검사를 완료하였고, 이미지 스프라이트 기법을 이용하여 이미지 작업을 진행하였습니다. slick slider 라이브러리를 이용하여 향상된 기능을 제공하는 이미지 슬라이드 작업을 하였습니다. </p>
+                        <div class="works-btn">
+                            <a href="/web/index.html" target="_blank">
+                                <strong>view site</strong>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <strong>description</strong>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-img web" aria-label="웹 표준 작업 사이트 입니다. "></div>
+            </div>
+        </section>
+        <!-- //web -->
+        <section id="my02">
+            <div class="my">
+                <div class="works-img respon"></div>
+                <div class="works-desc-wrap">
+                    <div class="works-desc">
+                        <span>project 02</span>
+                        <h3>
+                            반응형 사이트
+                            <strong>Responsive Site</strong>
+                        </h3>
+                        <p>미디어쿼리를 이용하여 반응형으로 작업하였으며 시맨틱 태그와 html의 아웃라이너를 파악할 수 있는 사이트를 통해 문서의 위계질서를 파악하여 한층 강화된 웹 표준을 준수하였습니다. Modernizr.js를 이용해 각 브라우저 기능검사뿐 아니라 img 태그의 srcset속성을 이용하여 다양한 기기들의 해상도에 대응하는 이미지 작업을 하였습니다. </p>
+                        <div class="works-btn">
+                            <a href="/responsive/html5/index.html" target="_blank">
+                                <strong>view site</strong>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <strong>description</strong>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //respon -->
+        <section id="my03">
+            <div class="my">
+                <div class="works-desc-wrap">
+                    <div class="works-desc">
+                        <span>project 03</span>
+                        <h3>
+                            메가박스 사이트
+                            <strong>Megabox Site</strong>
+                        </h3>
+                        <p>실제 메가박스 사이트를 리뉴얼하여 작업한 사이트입니다. 미디어쿼리를 사용하여 반응형으로 작업하였으며, 다양한 기기의 해상도에 대응하기 위하여 해상도별 이미지를 작업을 진행하였습니다. swiper slider를 이용하여 모바일에서도 쉽게 이미지 슬라이드가 적용될 수 있도록 작업하였습니다. </p>
+                        <div class="works-btn">
+                            <a href="/mega/index21.html" target="_blank">
+                                <strong>view site</strong>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <strong>description</strong>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-img mega"></div>
+            </div>
+        </section>
+        <!-- //mega -->
+        <section id="my04">
+            <div class="my">
+                <div class="works-img mobile"></div>
+                <div class="works-desc-wrap">
+                    <div class="works-desc">
+                        <span>project 04</span>
+                        <h3>
+                            모바일 사이트
+                            <strong>Mobile Site</strong>
+                        </h3>
+                        <p>웹 표준을 준수하여 만든 사이트입니다. 웹 표준을 준수하여 만든 사이트입니다. 웹 표준을 준수하여 만든 사이트입니다. 웹 표준을 준수하여 만든 사이트입니다. 웹 표준을 준수하여 만든 사이트입니다. 웹 표준을 준수하여 만든 사이트입니다. </p>
+                        <div class="works-btn">
+                            <a href="#" target="_blank">
+                                <strong>view site</strong>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <strong>description</strong>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //mobile -->
+    </section>
+    <!-- //section4 -->
+    <!--
+    <section id="mypro">
+        <div class="container">
+            <div class="mypro">
+                <h2>
+                    MY PROJECTS <strong>CHECK IN </strong><span>THIS PAGE</span>
+                </h2>
+                <div class="mypro-img">
+                    <div class="work1"></div>
+                    <div class="work2">
+                        <iframe src="../projects/ani/3dcube.html" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                    <div class="work3">
+                        <iframe src="../projects/mouseEffect/mouseeffect-ex.html" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- //mypro -->
+    <!-- <section id="section7">
+        <div class="sec7" data-0="margin-left: 0;" data-1000="margin-left: -5%;" data-3000="margin-left: -47%;">
+            <div class="banImg01" aria-hidden="true"></div>
+            <span>html5 css3</span>
+            <div class="banImg02" aria-hidden="true"></div>
+            <span>javascript</span>
+            <div class="banImg03" aria-hidden="true"></div>
+            <span>html5 css3</span>
+            <div class="banImg04" aria-hidden="true"></div>
+            <span>javascript</span>
+            <div class="banImg05" aria-hidden="true"></div>
+        </div>
+    </section> -->
+    <!--//section7-->
+
+    <section id="section8">
+        <div class="sec8">
+            <h2>javascript <strong>javascript</strong> javascript</h2>
+            <span class="left-text">
+                <span>web standard</span>responsive site. mobile web site
+            </span>
+            <span class="right-text">html, css, javascript, jquery</span>
+            <div class="tit-bgcircle" aria-hidden="true"></div>
+        </div>
+    </section>
+    <!--//section8-->
+    <section id="section9">
+        <div class="row">
+            <h3 class="sr-only">javascript contents</h3>
+            <div class="container2">
+                <div class="sec9">
+                    <div class="js-cont-box imgslide">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="js-cont">
+                                <iframe src="../projects/imageSlide/imageSlideJS01.html" frameborder="0" scrolling="no"></iframe>
+                            </div>
+                            <div class="js-desc">
+                                <div class="js-tit">
+                                    <span>01</span>
+                                    <h4>image slide</h4>
+                                </div>
+                                <a href="#">
+                                    code view
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-cont-box parallax">
+                        <div class="left">
+                            <div class="js-cont">
+                                <iframe src="../projects/parallaxEffect/parallax01.html" frameborder="0"></iframe>
+                            </div>
+                            <div class="js-desc">
+                                <div class="js-tit">
+                                    <span>02</span>
+                                    <h4>parallax</h4>
+                                </div>
+                                <a href="#">
+                                    code view
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="js-cont-box mouse">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="js-cont">
+                                <iframe src="../projects/mouseEffect/mouseeffect-ex.html" frameborder="0" scrolling="no"></iframe>
+                            </div>
+                            <div class="js-desc">
+                                <div class="js-tit">
+                                    <span>03</span>
+                                    <h4>mouse effect</h4>
+                                </div>
+                                <a href="#">
+                                    code view
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-cont-box chrome">
+                        <div class="left">
+                            <div class="js-cont"></div>
+                            <div class="js-desc">
+                                <div class="js-tit">
+                                    <span>04</span>
+                                    <h4>chrome app</h4>
+                                </div>
+                                <a href="#">
+                                    code view
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="js-cont-box paint">
+                        <div class="left"></div>
+                        <div class="right">
+                            <div class="js-cont"></div>
+                            <div class="js-desc">
+                                <div class="js-tit">
+                                    <span>05</span>
+                                    <h4>paint brush</h4>
+                                </div>
+                                <a href="#">
+                                    code view
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//section9-->
+    <section id="section5">
+        <div class="row">
+            <div class="container2">
+                <div class="sec5">
+                    <h2 class="sr-only">CSS ANIMATION</h2>
+                    <div class="css-titWrap">
+                        <span class="tit1" aria-hidden="true">CSS</span>
+                        <div class="titCircle">
+                            <span aria-hidden="true">UNIQUE &amp; SPECIAL CSS ANIMATION</span>
+                        </div>
+                        <strong class="tit2" aria-hidden="true">ANIMA</strong>
+                        <span class="tit3" aria-hidden="true">TION</span>
+                    </div>
+                    <div class="css-contWrap">
+                        <div class="css-row1">
+                            <div class="left tail">
+                                <div class="ani-cont">
+                                    <iframe src="../projects/ani/tail.html" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div class="ani-tit">
+                                    <div class="tit-top">
+                                        <span class="num">01</span>
+                                        <h3>TAIL ANIMATION</h3>
+                                    </div>
+                                    <a href="#"><span>VIEW MORE</span></a>
+                                </div>
+                            </div>
+                            <div class="center cube">
+                                <div class="ani-cont">
+                                    <iframe src="../projects/ani/3dcube.html" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div class="ani-tit">
+                                    <div class="tit-top">
+                                        <span class="num">02</span>
+                                        <h3>3D CUBE ANIMATION</h3>
+                                    </div>
+                                    <a href="#"><span>VIEW MORE</span></a>
+                                </div>
+                            </div>
+                            <div class="right wave">
+                                <div class="ani-cont">
+                                    <iframe src="../projects/ani/wave.html" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div class="ani-tit">
+                                    <div class="tit-top">
+                                        <span class="num">03</span>
+                                        <h3>WAVE ANIMATION</h3>
+                                    </div>
+                                    <a href="#"><span>VIEW MORE</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css-row2">
+                            <div class="left bar">
+                                <div class="ani-cont">
+                                    <iframe src="../projects/ani/bar.html" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div class="ani-tit">
+                                    <div class="tit-top">
+                                        <span class="num">04</span>
+                                        <h3>BAR ANIMATION</h3>
+                                    </div>
+                                    <a href="#"><span>VIEW MORE</span></a>
+                                </div>
+                            </div>
+                            <div class="center somth">
+                                <div class="ani-cont">
+                                    <iframe src="../projects/ani/3dcube.html" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div class="ani-tit">
+                                    <div class="tit-top">
+                                        <span class="num">05</span>
+                                        <h3>SOMTH ANIMATION</h3>
+                                    </div>
+                                    <a href="#"><span>VIEW MORE</span></a>
+                                </div>
+                            </div>
+                            <div class="right infin">
+                                <div class="ani-cont comingWrap">
+                                    <div class="coming1" aria-hidden="true">
+                                        <img src="../assets/img/coming01.png" alt="coming01">
+                                    </div>
+                                    <div class="coming2" aria-hidden="true">
+                                        <img src="../assets/img/coming02.png" alt="coming02">
+                                    </div>
+                                    <div class="coming3" aria-hidden="true">
+                                        <img src="../assets/img/coming03.png" alt="coming03">
+                                    </div>
+                                </div>
+                                <div class="ani-tit">
+                                    <div class="tit-top">
+                                        <span class="num">∞</span>
+                                        <h3>
+                                            <span>MORE CREATIVE</span>
+                                            PROJECTS
+                                        </h3>
+                                    </div>
+                                    <p>ARE COMING SOON...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section5 -->
+    <footer id="footer">
+        <div class="footer">
+            <div class="contactWrap">
+                <h2>EMAIL ME</h2>
+                <a href="mailto:rowankimna@gmail.com">
+                    <strong>rowankimna@gmail.com</strong>
+                </a>
+                <span>CONTACT ME</span>
+
+                <div class="bgcircle" aria-hidden="true"></div>
+                <img aria-hidden="true" class="rightLeaf" src="https://d2kq0urxkarztv.cloudfront.net/59ee0858278cca00855b0b53/1800751/upload-320e5230-a5b8-4c8d-8119-5ff8180550ea.png?w=264&amp;e=webp" alt="rightLeaf">
+                <img aria-hidden="true" class="leftLeaf" src="https://d2kq0urxkarztv.cloudfront.net/59ee0858278cca00855b0b53/1800751/upload-3abe8da0-97db-4b57-a3f6-3ab0ccbda439.png?w=334&amp;e=webp" alt="leftLeaf">
+            </div>
+            <p>portfolio 2020</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- script -->
+    <script src="../assets/js/jquery.min.1.12.4.js"></script>
+    <script src="../assets/js/skrollr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script>
+        //skrollr 스크롤러
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+
+        $(window).scroll(function() {
+            let scroll = parseInt($(window).scrollTop());
+            $(".scroll").text(scroll);
+        });
+
+
+        // header parallax 헤더 패럴럭스
+        const wHeight = $(window).height();
+        const dHeight = $(document).height();
+        const headerHeight = $("#header").outerHeight();
+        let lastScrollTop = 0;
+        let moveScroll;
+
+        $(window).scroll(function(event) {
+            moveScroll = true;
+        });
+
+        setInterval(function() {
+            if (moveScroll) {
+                hasScroll();
+                moveScroll = false;
+            }
+        }, 250);
+
+        function hasScroll() {
+            let wScroll = $(this).scrollTop();
+            if (wScroll > lastScrollTop && wScroll > headerHeight) {
+                $("#header").addClass("on");
+            } else {
+                if (wScroll + wHeight < dHeight) {
+                    $("#header").removeClass("on");
+                }
+            }
+            lastScrollTop = wScroll;
+        }
+
+        // 원 호버 시 배경색 바뀜
+        const circle1 = $(".circle1img");
+        const circle3 = $(".circle3img");
+
+        circle1.hover(function() {
+            $("#section1").addClass("bgBeige");
+            $(".circle1").addClass("big");
+        }, function() {
+            $("#section1").removeClass("bgBeige");
+            $(".circle1").removeClass("big", {
+                duration: 600
+            });
+        });
+
+        circle3.hover(function() {
+            $("#section1").addClass("bgMint");
+            $(".circle3").addClass("big");
+        }, function() {
+            $("#section1").removeClass("bgMint");
+            $(".circle3").removeClass("big");
+        });
+
+
+
+
+        $(window).scroll(function() {
+            // body 배경 스크롤 이벤트
+            let wScroll = $(this).scrollTop();
+            const wHeight = $(window).height();
+            const $section2 = $("#section2");
+            const $section4 = $("#section4");
+            const $section8 = $("#section8");
+            const $section5 = $("#section5");
+            const $footer = $("#footer");
+            const $body = $("body");
+
+            if (wScroll > $section2.offset().top - wHeight / 2 && wScroll < $section4.offset().top - wHeight / 2) {
+                $body.addClass("bgBeige");
+            } else if (wScroll > $section8.offset().top && wScroll < $section5.offset().top - wHeight / 2) {
+                $body.removeClass("bgBeige");
+                $body.addClass("bgMint");
+            } else if (wScroll >= $footer.offset().top - wHeight / 2) {
+                $body.removeClass("bgMint");
+                $body.addClass("bgBeige");
+            } else {
+                $body.removeClass("bgBeige");
+                $body.removeClass("bgMint");
+            }
+
+
+
+
+            //section 5 이미지 회전
+            if (wScroll >= $section5.offset().top) {
+                $(".coming1").attr("style", "transform: translate(-50%, -50%) rotate(" + parseInt(wScroll - $section5.offset().top) / 10 + "deg)");
+                $(".coming2").attr("style", "transform: translate(-50%, -50%) rotate(" + parseInt(wScroll - $section5.offset().top) / 20 + "deg)");
+                $(".coming3").attr("style", "transform: translate(-50%, -50%) rotate(" + parseInt(wScroll - $section5.offset().top) / 5 + "deg)");
+            } else {
+                $(".coming1").attr("style", "transform: translate(-50%, -50%) rotate(0deg)");
+                $(".coming2").attr("style", "transform: translate(-50%, -50%) rotate(0deg)");
+                $(".coming3").attr("style", "transform: translate(-50%, -50%) rotate(0deg)");
+            }
+        })
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- https://aainterior.com.ua/ -->

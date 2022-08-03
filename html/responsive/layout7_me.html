@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>layout7_1</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {background: #eceff1; text-align: center;}
+        #wrap {width: 1200px; margin: 0 auto;}
+        .header {width: 100%; height: 80px; background: #cfd8dc;}
+        .article {width: 100%; height: 200px; background: #b0bec5;}
+        .aside {float: left; width: 20%; height: 300px; background: #90a4ae;}
+        .sec1 {float: left; width: 80%; height: 150px; background: #78909c;}
+        .sec2 {float: left; width: 80%; height: 150px; background: #607d8b;}
+        .article1 {float: left; width: 33.3333%; height: 200px; background: #546e7a;}
+        .article2 {float: left; width: 33.3333%; height: 200px; background: #455a64;}
+        .article3 {float: left; width: 33.3333%; height: 200px; background: #37474f;}
+        .secWrap {overflow: hidden; width: 96%; padding: 2%; background: #263238;}
+        .secWrap div {float: left; width: 21%; margin: 2%; height: 100px; border-radius: 5%; background: #424242;}
+        .footer {clear: both; width: 100%; height: 80px; background: #616161;}
+        
+        /* 화면 너비 0 ~ 1200px */
+        @media (max-width: 1200px){
+            #wrap {width: 100%;}
+            .article1 {width: 50%;}
+            .article2 {width: 50%;}
+            .article3 {display: none;}
+            .secWrap div {width: 31.3333%; margin: 1%;}
+            .secWrap div:last-child {display: none;}
+        }
+        /* 화면 너비 0 ~ 768px */
+        @media (max-width: 768px){
+            .article1 {width: 100%; height: 100px;}
+            .article2 {width: 100%; height: 100px;}
+        }
+        /* 화면 너비 0 ~ 480px */
+        @media (max-width: 480px){
+            .aside {width: 100%;}
+            .sec1 {width: 100%;}
+            .sec2 {width: 100%;}
+            .secWrap div {width: 92%; margin: 4%;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">header</header>
+        <article class="article">article</article>
+        <aside class="aside">aside</aside>
+        <section class="sec1">section1</section>
+        <section class="sec2">section2</section>
+        <article class="article1">article1</article>
+        <article class="article2">article2</article>
+        <article class="article3">article3</article>
+        <section class="secWrap">
+            <div>div1</div>
+            <div>div2</div>
+            <div>div3</div>
+            <div>div4</div>
+        </section>
+        <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>
